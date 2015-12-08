@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/list_users"
+    android:focusableInTouchMode="false"
+    android:weightSum="1">
+
+    <ListView
+        android:id="@+id/list_users_"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#fffad1"
+        android:alpha="100"
+        android:scrollIndicators="left"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:listSelector="@color/abc_search_url_text_normal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:layout_gravity="top"
+        android:id="@+id/id_list_change_data"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:text="@string/fio"
+            android:ems="10"
+            android:id="@+id/id_fio"
+            android:background="#ebfeff"
+            android:textColor="#210cff"
+            android:singleLine="true"
+            android:layout_gravity="bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/fio_DatePicker"
+                android:spinnersShown="true"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:focusable="true"
+                android:theme="@style/AlertDialog.AppCompat.Light"
+                android:layout_weight="0.81"
+                android:background="#cbf5ff"
+                android:calendarTextColor="#ffb70c"
+                android:focusableInTouchMode="true"
+                android:layout_gravity="bottom" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Switch"
+                android:id="@+id/switch1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#81caff"
+            android:id="@+id/id_buttons_save">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SaveList2"
+                android:id="@+id/id_save_inList"
+                android:layout_weight="1"
+                android:onClick="Click_list" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Save_list"
+                android:id="@+id/id_return"
+                android:layout_weight="1"
+                android:onClick="Click_list" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_weight="1"
+        android:id="@+id/footer4list"
+        android:background="#cbf5ff">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_list"
+            android:id="@+id/id_add_list"
+            android:layout_weight="1"
+            android:onClick="Click_list" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/del_list"
+            android:id="@+id/id_del_list"
+            android:layout_weight="1"
+            android:onClick="Click_list" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_list"
+            android:id="@+id/id_change_list"
+            android:layout_weight="1"
+            android:onClick="Click_list" />
+    </LinearLayout>
+
+</LinearLayout>
